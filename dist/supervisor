@@ -1,0 +1,19 @@
+# Defaults for supervisor initscript
+# sourced by /etc/init.d/supervisor
+# installed at /etc/default/supervisor by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS=""
+export LIVEBUFFER=$LIVEBUFFER{}
+export MAXCONNECTIONS=${MAXCONNECTIONS}
+export MAXPEERS=${MAXPEERS}
+export DLIMIT=${DLIMIT}
+export ULIMIT=${ULIMIT}
+export NETCACHING=${NETCACHING}
+export HTTPPORT=${HTTPPORT}
+export PUBPORT=${PUBPORT}
+
