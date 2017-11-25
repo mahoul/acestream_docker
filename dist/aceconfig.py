@@ -86,7 +86,7 @@ class AceConfig(object):
     # VLC telnet interface port
     vlcport = 4212
     # VLC streaming port (you shouldn't set it in VLC itself)
-    vlcoutport = 8081
+    vlcoutport = int(os.environ.get('VLCOUTPORT')) if os.environ.get('VLCOUTPORT') else 8081
     # VLC telnet interface password
     vlcpass = 'admin'
     # Pre-access (HTTP) VLC parameters
